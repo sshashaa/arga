@@ -1,4 +1,4 @@
-# arga
+# ARGA
 Adaptive Robust Genetic Algorithm
 
 Adaptive Robust Genetic Algorithm (ARGA) optimizes zero-one simulation problems by incorporating input uncertainty. In ARGA, a surviving population of solutions evolves as more information about the high-dimensional problem affected by stochasticity becomes available. A ranking and selection operation in each iteration is enhanced with a debiasing mechanism of fitness values using fast iterated bootstraps and control variates. Debiasing reduces the model risk from input uncertainty bias, obtaining a more accurate ranking of the current surviving solutions. Given the double loop of function evaluations, we adaptively increase budget only if the current population’s proximity to optimality signals the need for a smaller standard error. In that case, we allocate additional replications to the input model of a current surviving solution that is most responsible for risk. The empirical results with a fixed optimization budget demonstrate that ARGA obtains significantly better solutions in a feature selection problem on various datasets.
